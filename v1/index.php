@@ -33,7 +33,7 @@ $app->get('/tasks', function() {
             while ($user = $result['user']->fetch_assoc()) {
                 $tmp1 = array();
                 $tmp1["id"] = $user["id"];
-                $tmp1["name"] = ['Name'=>$user["name"],'ID'=>$user["id"],'Email'=>$user["email"]];
+                $tmp1["name"] = ['Name'=>$user["name"],'ID'=>$user["id"],'Email'=>$user["email"],'api_key'=>$user['api_key']];
                 $tmp1["email"] = $user["email"];
                 $tmp1["password_hash"] = $user["password_hash"];
                 $tmp1["api_key"] = $user["api_key"];
