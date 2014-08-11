@@ -1,7 +1,7 @@
 PHP-API
 =======
 
-make an simple API with php,My-sql and slim framework
+Create simple API with php,My-sql and slim framework
 
 Steps to run APIs
 
@@ -10,6 +10,7 @@ Steps to run APIs
 
 
 list of pages for change required code as per your requirement
+
 1) "include/config.php" for database connectivity.
 2) "v1/index.php" for showing appropriate json format data.
-3) "include/DbHandler.php" for fetching data from database.
+3) "include/DbHandler.php" for fetching and adding data to database.
