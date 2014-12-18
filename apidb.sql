@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 25, 2014 at 07:01 PM
+-- Generation Time: Dec 18, 2014 at 07:47 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -52,12 +52,10 @@ INSERT INTO `tasks` (`id`, `task`, `status`, `created_at`) VALUES
 
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password_hash` varchar(255) NOT NULL,
-  `api_key` varchar(255) NOT NULL,
-  `status` varchar(255) NOT NULL,
-  `created_at` text NOT NULL,
+  `FirstName` varchar(255) NOT NULL,
+  `LastName` varchar(255) NOT NULL,
+  `EmailAddress` varchar(255) NOT NULL,
+  `Password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
@@ -65,9 +63,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password_hash`, `api_key`, `status`, `created_at`) VALUES
-(1, 'inaam', 'inaam@reach1to1.com', 'basbf7asfaksnas8sdasdas', 'inaam', 'ok', 'today'),
-(2, 'rahul', 'rahl@gmail.com', 'jsdfsdc77d7dc7ds7sdn', 'inakkfl', 'good', 'yesterday');
+INSERT INTO `users` (`id`, `FirstName`, `LastName`, `EmailAddress`, `Password`) VALUES
+(1, 'Inaam', 'Sunesara', 'test@test.com', 'test'),
+(2, 'Rehmaan ali', 'Sunesara', 'test1@test.com', 'test1');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
